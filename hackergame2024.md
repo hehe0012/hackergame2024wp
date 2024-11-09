@@ -271,7 +271,7 @@ int main(){
 ## 13.优雅的不等式
 ### 任务：给出有理数p/q，找出f(x)使f(x)在(0,1)上的积分为pi-p/q且在[0,1]上有f(x)>=0
 上网搜索，找到这篇文章
-<img src="img/image-20.png"></img>
+<img src="img/image-21.png"></img>
 但是题目要求精度极高，四次方的逼近显然不够，使用sympy计算更高次方的积分算式（这个工具是真的nb）,由于题目有长度要求，经过不断尝试后78次方的逼近成功通过测试，下面是交互代码
 ````python
 from subprocess import Popen, TimeoutExpired, PIPE
