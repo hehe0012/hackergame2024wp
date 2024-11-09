@@ -160,7 +160,7 @@ print(resp1.text)
 <img src="img/image-12.png"></img>
 然后在高德地图上逐个搜索附近医院即可
 ## 8.不宽的宽字符
-程序的错误是输入了宽字符然后使用普通char(4bytes)指针指向宽字符(8bytes)，导致无法正确打开文件，只用输入`Z:\theflag\0`对应的宽字符即可<br/>python代码为`print(b"\x5A\x3A\x2F\x74\x68\x65\x66\x6C\x61\x67\x0A\x00".decode("utf16"))`
+程序的错误是输入了宽字符然后使用普通char(4bytes)指针指向宽字符(8bytes)，导致无法正确打开文件，输入`Z:\theflag\0`对应的宽字符即可<br/>python代码为`print(b"\x5A\x3A\x2F\x74\x68\x65\x66\x6C\x61\x67\x0A\x00".decode("utf16"))`
 ## 10.Node.js is Web Scale
 先查看给出的服务端代码，只有cmd指令能够获取到服务器文件信息，但是cmd指令只有两条，上网查询发现可以污染对象的原型来使cmd有新的命令
 <img src="img/image-14.png"></img>
@@ -198,7 +198,7 @@ with open("data/"+"text"+".txt","w",encoding="utf-8") as f:
         f.write(page1.text)
 ````
 然后ctrl+f即可得到第一个flag<br/>
-<img src="img/image-19.png"></img>
+<img src="img/image-19.png"></img><br/>
 然后查看服务端代码,发现只显示了`shown=True`的文件,利用mysql中的union显示`shown=false`的文件，设置`conversion_id=' UNION select title, contents from messages where shown='0`绕过mysql的语句<br/>
 在网页底部得到第二个flag
 <img src="img/image-20.png"></img>
@@ -271,7 +271,7 @@ int main(){
 ## 13.优雅的不等式
 ### 任务：给出有理数p/q，找出f(x)使f(x)在(0,1)上的积分为pi-p/q且在[0,1]上有f(x)>=0
 上网搜索，找到这篇文章
-![alt text](image-21.png)
+<img src="img/image-20.png"></img>
 但是题目要求精度极高，四次方的逼近显然不够，使用sympy计算更高次方的积分算式（这个工具是真的nb）,由于题目有长度要求，经过不断尝试后78次方的逼近成功通过测试，下面是交互代码
 ````python
 from subprocess import Popen, TimeoutExpired, PIPE
