@@ -98,7 +98,7 @@ time.sleep(100)
 <img src="img/image-6.png"></img>
 
 ## 6.比大小王
-最开始想使用python中的selenium模块识别大小并点击，但是10秒只能完成40题<del>(体会到了校园口算里小学生的恐惧)</del></br>
+最开始想使用python中的selenium模块识别大小并点击，但是10秒只能完成40题<del>(体会到了小辕口算里小学生的恐惧)</del></br>
 然后在控制台可以查看网页的逻辑，发现网页会先请求数据和开始时间，在答对100题后将json文件传递给服务器，在python中利用requests模块完成即可，代码如下
 ````python
 import requests
